@@ -1,0 +1,374 @@
+//
+// File Name - _utilities.scss
+// Description - CSS utility classes for any web project.These classes are mainly for some CSS properties that we mostly used in our web projects/sites.
+//
+
+$spacer : 5px;
+
+//
+// Utilities - Margin and Padding
+//
+
+@each $box in a , x , y , t , b , l, r {
+	@for $i from 1 through 6 {
+		.m-#{$box}-#{$i}{ 
+			@if $box == 'a' {
+				margin: ($spacer * $i) !important;
+			}
+
+			@if $box == 'x' {
+				margin-left: ($spacer * $i) !important;
+				margin-right: ($spacer * $i) !important;
+			}
+
+			@if $box == 'y' {
+				margin-top: ($spacer * $i) !important;
+				margin-bottom: ($spacer * $i) !important;
+			}
+
+			@if $box == 't' {
+				margin-top: ($spacer * $i) !important;
+			}
+
+			@if $box == 'b' {
+				margin-bottom: ($spacer * $i) !important;
+			}
+
+			@if $box == 'l' {
+				margin-left: ($spacer * $i) !important;
+			}
+
+			@if $box == 'r' {
+				margin-right: ($spacer * $i) !important;
+			}
+		}
+
+		.p-#{$box}-#{$i}{ 
+			@if $box == 'a' {
+				padding: ($spacer * $i) !important;
+			}
+
+			@if $box == 'x' {
+				padding-left: ($spacer * $i) !important;
+				padding-right: ($spacer * $i) !important;
+			}
+
+			@if $box == 'y' {
+				padding-top: ($spacer * $i) !important;
+				padding-bottom: ($spacer * $i) !important;
+			}
+
+			@if $box == 't' {
+				padding-top: ($spacer * $i) !important;
+			}
+
+			@if $box == 'b' {
+				padding-bottom: ($spacer * $i) !important;
+			}
+
+			@if $box == 'l' {
+				padding-left: ($spacer * $i) !important;
+			}
+
+			@if $box == 'r' {
+				padding-right: ($spacer * $i) !important;
+			}
+		}
+	}
+}
+
+//
+// Utilities - Border
+//
+.br {
+    &-r {
+        &-0 {
+            border-left: 0px !important;
+        }
+    }
+    &-l {
+        &-0 {
+            border-right: 0px !important;
+        }
+    }
+    &-b{
+        &-0{
+            border-bottom:0px !important;
+        }
+    }
+    &-t{
+        &-0{
+            border-top:0px !important;
+        }
+    }
+
+	&-r {
+        &-1 {
+            border-left: solid 1px #ccc!important;
+        }
+    }
+    &-l {
+        &-1 {
+            border-right: solid 1px #ccc!important;
+        }
+    }
+    &-b{
+        &-1{
+            border-bottom: solid 1px #ccc!important;
+        }
+    }
+    &-t{
+        &-1{
+            border-top: solid 1px #ccc!important;
+        }
+    }
+}
+
+//
+// Utilities - Vertical Align
+//
+.va{
+	&-sub {
+ 		vertical-align: sub !important; 
+	}
+	&-middle {
+ 		vertical-align: middle!important; 
+	}
+	&-bottom{
+		vertical-align: bottom!important; 
+	}
+	&-top{
+		vertical-align: top!important; 
+	}
+    &-baseline{
+		vertical-align: baseline!important; 
+	}
+	&-auto{
+		vertical-align: auto!important;
+	}
+	&-text-bottom{
+		vertical-align: text-top;
+	}
+}
+
+
+//
+// Utilities - Display
+//
+.d{
+	&-block {
+	  display: block !important;
+	}
+	&-inline-block {
+	  display: inline-block !important;
+	}
+	&-inline {
+	  display: inline !important;
+	}
+	&-table{
+	  display: table !important;		
+	}
+}
+
+
+// //
+// // Utilities - Z Indexes 
+// //
+.z-in{
+	&-1{
+		z-index: 1;
+	}
+
+	&-2{
+		z-index: 2;
+	}
+
+	&-3{
+		z-index: 3;
+	}
+}
+
+//
+// Utilities - font-size
+//
+.fs {
+    &-10{
+		font-size: 0.625rem!important
+	}
+	&-11{
+		font-size: 0.6875rem!important
+	}
+	&-12 {
+		font-size: 0.75rem !important;
+	}
+	&-14 {
+		font-size: 0.875rem !important;
+	}
+	&-16 {
+		font-size: 1.0rem !important;
+	}
+	&-18{
+		font-size: 18px!important
+	}
+	&-20 {
+		font-size: 1.25rem !important;
+	}
+}
+
+//
+// Utilities - font-weight
+//
+.fw {
+	&-n {
+		font-weight: normal !important;
+	}
+	&-bold{
+		font-weight: bold !important;
+	}
+}
+
+//
+// Utilities - Rotate
+//
+
+.ra{
+	&-45{
+		transform: rotate(45deg);
+	}
+	&-90{
+		transform: rotate(90deg);
+	}
+	&-180{
+		transform: rotate(180deg);
+	}
+	&-270{
+		transform: rotate(270deg);
+	}
+	&-360{
+		transform: rotate(270deg);
+	}
+}
+
+
+//
+// Utilities - Position
+//
+
+
+.p {
+	&-abs {
+		position: absolute !important;
+	}
+	&-rel{
+		position: relative !important;
+	}
+	&-fix {
+		position: fixed !important;
+	}
+}
+
+
+// //
+// // Utilities - Text Transform
+// //
+
+.text{
+	&-caps{
+		text-transform:capitalize !important;
+	}
+	&-uppercase{
+		text-transform:uppercase !important;
+	}
+	&-lowercase{
+		text-transform:lowercase !important;
+	}
+    &-center{
+        text-align:center !important;
+    }
+	
+    &-line-through{
+		text-decoration:line-through;
+	}
+
+	&-italic{
+		font-style: italic !important;
+	}
+}
+
+// //
+// // Utilities - Float
+// //
+.float{
+	&-none{
+		float: none !important;
+	}
+	&-l{
+		float: left !important;
+	}
+	&-r{
+		float: right !important;
+	}
+}
+
+
+// //
+// // Utilities - Cursor
+// //
+cursor{
+	&-move{
+		cursor: move !important;;
+	} 
+
+	&-default{
+		cursor: default !important;
+	}
+
+	&-pointer{
+		cursor: pointer !important;
+	}
+}
+
+// //
+// // Utilities - Box Sizing
+// //
+.box{
+	&-content *{
+		-webkit-box-sizing: content-box;
+		box-sizing: content-box;
+	}
+
+	&-border *{
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+
+// //
+// // Utilities - Others
+// //
+.selection-off{
+	* {
+	    -webkit-user-select: none;
+	    -ms-user-select: none;
+	    -moz-user-select: -moz-none;
+	    -o-user-select: none;
+	    user-select: none;
+	}
+}
+
+.ellipsis{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	max-width: 100%;
+	white-space: nowrap;
+}
+
+.full{
+	&-height{
+		height: 100% !important;
+	}
+
+	&-width{
+		width: 100% !important;
+	}
+}

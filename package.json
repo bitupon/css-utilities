@@ -1,0 +1,32 @@
+{
+  "name": "css_utilities",
+  "version": "1.0.0",
+  "description": "CSS utility classes for any web project.These classes are mainly for some CSS properties that we mostly used in our web projects/sites.",
+  "main": " ",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitupon/css-utilities.git"
+  },
+  "keywords": [
+    "['css",
+    "utilities'",
+    "'web",
+    "utilities'",
+    "'utilities']"
+  ],
+  "author": "bitpon chetia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bitupon/css-utilities/issues"
+  },
+  "homepage": "https://github.com/bitupon/css-utilities#readme", 
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2"
+  }
+}
