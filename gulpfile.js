@@ -15,7 +15,7 @@ var pkg = require('./package.json'),
  */
 gulp.task('sass', function () {
     var scssArr = [
-        paths.scss + 'utilities.scss'       
+        paths.scss + 'main.scss'       
     ];
 
     return gulp.src(scssArr)
